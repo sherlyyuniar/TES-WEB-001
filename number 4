@@ -1,0 +1,19 @@
+<?php
+
+
+
+$string = "AKU SUKA MAKAN NASI PADANG";
+
+$a = substr($string, 0, 3); //aku
+$b = substr($string, 0, 8); //aku suka
+$c = substr($string, 0, 14); //aku suka makan
+$d = substr($string, 0, 20); //aku suka makan nasi
+$e = substr($string, 0, 27); //aku suka makan nasi padang
+$f = substr($string, 20, 6); //padang
+$g = substr($string, 15, 4); //nasi
+$h = substr($string, 9, 5); //makan
+$i = substr($string, 4, 4); //suka
+
+echo $a . " , " . $b . " , " . $c . " , " . $d . " , " . $e . " , " . $f . " , " . $f . " " . $g . " , " . $f . " " . $g . " " . $h . " , " . $f . " " . $g . " " . $h . " " . $i . " , " . $f . " " . $g . " " . $h . " " . $i . " " . $a ;
+ 
+?>
