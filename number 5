@@ -12,7 +12,7 @@ insert into buah(nama, harga, rasa) values
 //menambahkan pisang
 insert into buah(nama, harga, rasa) values ('pisang','5000','manis');
 //tampilkan nama buah secara descending
-select * from buah DESC;
+select * from buah order by nama DESC;
 // --------------------------------------------------------------------
 
 // ----- point b
