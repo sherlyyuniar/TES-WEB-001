@@ -1,0 +1,24 @@
+//membuat tabel buah
+create table buah(nama varchar(10), harga int(5), rasa varchar(10));
+insert into buah(nama, harga, rasa) values
+('jeruk','5000','asam'),
+('mangga','20000','manis'),
+('apel','5000','manis'),
+('durian','50000','manis),
+('duku','10000','asam'),
+('nanas','5000','asam');
+
+// ----- point a
+//menambahkan pisang
+insert into buah(nama, harga, rasa) values ('pisang','5000','manis');
+//tampilkan nama buah secara descending
+select * from buah DESC;
+// --------------------------------------------------------------------
+
+// ----- point b
+select nama from buah where nama like '%K%';
+// --------------------------------------------------------------------
+
+// ----- point c
+select nama, harga, rasa from buah where (harga<10000) and (rasa='manis');
+// ---------------------------------------------------------------------
