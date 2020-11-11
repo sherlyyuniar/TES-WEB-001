@@ -1,0 +1,44 @@
+<?php
+
+
+// ----- point a :
+//ubah 2020-05-01 menjadi 05-20-01 dengan substring
+
+$date = "2020-05-01";
+
+//memisahkan format tahun menggunakan substring
+$tahun = substr($date, 2, 2);
+
+//memisahkan format bulan menggunakan substring
+$bulan = substr($date, 5, 2);
+
+//memisahkan format tanggal menggunakan substring
+$tgl = substr($date, 8, 2);
+
+$result =  $bulan ."-". $tahun ."-". $tgl;
+
+echo $result;
+
+// ----------------------------------------------------------------
+
+//----- point b
+//ubah 2020-05-01 menjadi 05-20-01 dengan format date PHP
+//-----------------------------------------------------------------
+
+//----- point c
+// Tampilkn 6 bulan ke depan
+
+$date = "2020-05-01";
+$n = 6;
+
+$nextN = mktime(0,0,0, date("m") + $n, date("d"), date("Y"));
+
+echo date("Y-m-d", $nextN);
+
+// -----------------------------------------------------------------
+
+// ----- point d
+//------------------------------------------------------------------
+
+
+?>
